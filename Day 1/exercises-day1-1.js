@@ -2,6 +2,7 @@
 
 
 // Create an index.html page and add an external link to this .js file.
+
 document.write("Successfully Linked Exercises Day 1");
 
 // Open up index.html in the browser. If you see "Successfully Linked Exercises Day 1" on your page, you may continue.
@@ -10,69 +11,60 @@ document.write("Successfully Linked Exercises Day 1");
 
 //1. Define a new variable `quote` for the value "A ship in port is safe, but that is not what ships are for. Sail out to sea and do new things."
 
-var quote = "A ship in port is safe, but that is not what ships are for. Sail out to sea and do new things.";
+var quote = "A ship in port is safe, but that is not what ships are for. Sail out to sea and do new things";
 
 //Log out the quote
+
 console.log(quote);
 
 //Log out the type of the variable. Is it a string? A number? Something else?
+
 console.log(typeof quote);
 
 //2. Define a variable `quoteLength` that stores the length of the quote.
-var quoteLength = quote.length;
+
+var quoteLength = (quote.length)
 
 //Log out the length
-console.log(quoteLength);
+
+console.log(quote.length)
 
 //3. Create a new variable `attributedQuote`. Add the string "- Rear Admiral Grace Hopper" to the end of the `quote` variable with an appropriate space in between.
 //This new value should not _replace_ the `quote` variable's value
 //Log out the new quote
-var attributedQuote = quote + " - Rear Admiral Grace Hopper";
+
+var attributedquote = " - Rear Admiral Grace Hopper";
+console.log(quote + attributedquote);
 
 //4. Create a function `attribute` that takes a quote and author and returns the attributed quote.
 //Example: Takes "The key to being a successful programmer is to learn how to learn." and "- Shannon Burns" and returns "The key to being a successful programmer is to learn how to learn. - Shannon Burns"
 
-function attribute(quote, author) {
-    return quote + " " + author;
+var attribute =function(quote1, author){
+    return quote1 + author
 }
-
-console.log(attribute("The key to being a successful programmer is to learn how to learn.", "- Shannon Burns"));
+var quote1= "The key to being a successful programmer is to learn how to learn."
+var author= " - Shannon Burns"
+console.log(attribute(quote1, author));
 
 //5. Create a function `sumOfNumbers` that takes 2 numbers and returns the sum of those numbers.
-function sumOfNumbers(num1, num2) {
-    return num1 + num2;
-}
 
-console.log(sumOfNumbers(1, 2));
+var sumOfNumbers =function(num1, num2){
+    return num1 + num2
+}
+var num1= 127;
+var num2= 256;
+console.log(sumOfNumbers(num1, num2));
 
 //6. Create a function `sumOfLowNumbers` that takes 5 numbers and returns the sum of all numbers that are less than or equal to 6.
-function sumOfLowNumbers(num1, num2, num3, num4, num5) {
-    var sum = 0;
 
-    if(num1 <= 6) {
-        sum += num1;
-    }
-
-    if(num2 <= 6) {
-        sum += num2;
-    }
-
-    if(num3 <= 6) {
-        sum += num3;
-    }
-
-    if(num4 <= 6) {
-        sum += num4;
-    }
-
-    if(num5 <= 6) {
-        sum += num5;
-    }
-
+function sumOfLowNumbers(n) {
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+    sum += i;
+}
     return sum;
 }
-
-console.log(sumOfLowNumbers(5, 7, 1, 8, 3));
+    console.log( sumOfLowNumbers(5) );
 
 //7. Go to https://pages.github.com/ and read through the tutorial to create a Github page.
 // Choose Project site, Start from scratch. When you're finished, link your new project page here.
