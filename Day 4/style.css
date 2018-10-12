@@ -1,0 +1,39 @@
+body {
+    margin-top: 10px;
+    margin-left: 200px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #24292e;
+    background-color: #fff;
+}
+
+button {
+    margin-top: 60px;
+}
+
+.wrap {
+    margin: 0 auto;
+    padding: 0;
+    width: 600px;
+}
+
+.swipe {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.swipe div {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+#quote {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+#quote {
+    transition: left 800ms ease-in 0;
+}
