@@ -16,7 +16,7 @@ var timerInc= function (){
     }
     quoters.innerHTML= quotes [quoteplace];
 }
-setInterval(timerInc, 3000);
+setInterval(timerInc, 30000);
 
 backB= document.getElementById("backwards");
 nextB= document.getElementById("forwards");
