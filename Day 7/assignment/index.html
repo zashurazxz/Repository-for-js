@@ -8,21 +8,24 @@
     <title>Document</title>
 </head>
 
-
-<div class="small-container">
-        <h1>Lyric Generator</h1>
-        <p>search an artist or song name</p>
-        <form>
-          <input id="item" type="text" placeholder="Search here" required>
-        </form>
-        
-        <h2>Displayed lyrics</h2>
-        <ul></ul>
-        
-        <button>Clear Local Data</button>
-        </div>
-<script src="./script.js"></script>
 <body>
+<div class="formHold">
+  <form name="lyricForm">
+    <label for="Name">Please Enter Artist Full Name:</label>
+    <input name="Name" type="text">
+    <br><br>
+    <label for="Song">Please Enter Full Song Name:</label>
+    <input name="Song" type="text">
+    <br><br>
+    <div>
+      <input id="lyricsGrabber" type="button" value="Lyrics">
+    </div>
+  </form>
+</div>
+<div id="container" class="Results">
     
+</div>
+
+<script src="./script.js"></script>
 </body>
 </html>
